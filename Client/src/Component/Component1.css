@@ -1,0 +1,142 @@
+/* Global container */
+.container1 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #f2f2f0, #fdebd3);
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+  
+
+  
+  .header a {
+    color: #1967d2;
+    text-decoration: none;
+  }
+  
+  .sign-in {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 14px 12px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 110rem !important;
+    gap: 8px;
+  }
+  
+  .message {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    max-width: 60%;
+  }
+  
+  .user-message {
+    background-color: #d1e7dd;
+    margin-left: auto;
+    text-align:left;
+    margin-right: 300px ;
+    width: fit-content;
+    max-width: 600px;
+    word-wrap: break-word;
+
+  }
+  
+  .admin-message {
+    background-color: #f8d7da;
+    margin-right: auto;
+    text-align: left;
+    margin-left: 300px; 
+    max-width: 600px;
+    width: fit-content;
+    word-wrap: break-word;
+  }
+  
+  .message-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    flex: 1 1 auto;
+    overflow-y: auto;
+    min-height: 0;
+    padding-bottom: 110px;
+  }
+  
+ 
+  /* Footer section styling */
+  .footer {
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #F8F1E9;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    width: min(600px, calc(100% - 40px)) !important;
+    height: 62px;
+    border-radius: 30px;
+    border: 1px solid white;
+  }
+  
+  .footer input {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    gap: 10px;
+  }
+  .add-button,
+  .attach-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+
+  .typing-indicator {
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+    height: 32px;
+  }
+
+  .typing-indicator span {
+    width: 6px;
+    height: 6px;
+    background: #8b6f4e;
+    border-radius: 50%;
+    opacity: 0.4;
+    animation: typing-bounce 1s infinite ease-in-out;
+  }
+
+  .typing-indicator span:nth-child(2) {
+    animation-delay: 0.15s;
+  }
+
+  .typing-indicator span:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+
+  @keyframes typing-bounce {
+    0%, 80%, 100% {
+      transform: translateY(0);
+      opacity: 0.4;
+    }
+    40% {
+      transform: translateY(-4px);
+      opacity: 0.9;
+    }
+  }
+  
